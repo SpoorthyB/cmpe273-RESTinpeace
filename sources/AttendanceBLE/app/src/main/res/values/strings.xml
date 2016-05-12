@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Attendance BLE</string>
+
+    <string name="bt_not_enabled">User declined to enable Bluetooth, exiting Bluetooth Advertisements.</string>
+    <string name="bt_not">Bluetooth is not supported on this device.</string>
+    <string name="bt_advt_not">Bluetooth Advertisements are not supported on this device.</string>
+
+    <string name="error_prefix">Start Advertising failed: </string>
+    <string name="error_already_started">already started.</string>
+    <string name="error_too_large">data packet exceeded 31 Byte limit.</string>
+    <string name="error_unsupported">not supported on this device.</string>
+    <string name="error_internal">internal error.</string>
+    <string name="error_too_many">too many advertisers.</string>
+    <string name="error_unknown">too many advertisers.</string>
+    <string name="bt_obj_null">Error: Bluetooth object null</string>
+    <string name="advertising_timedout">Advertising stopped due to timeout.</string>
+
+</resources>
