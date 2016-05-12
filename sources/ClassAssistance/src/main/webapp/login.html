@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <meta charset="utf-8" />
+    <head>
+        <title>Class Assistance</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <!-- jQuery -->
+        <script src="resources/js/jquery-2.2.3.min.js"></script>
+
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Welcome</h1>
+
+                <form name="loginform" class="form">
+                    <input name="loginname" type="text" placeholder="Username">
+                    <input name="loginpassword" type="password" placeholder="Password">
+                    <button type="submit" id="login-button">Login</button>
+                </form>
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <script>                        
+            $("#login-button").click(function (event) {
+                event.preventDefault();
+
+                $('form').fadeOut(500);
+                $('.wrapper').addClass('form-success');
+                /*var xhr = new XMLHttpRequest();
+                var url = "http://54.201.81.197:8080/SentimentAnalysis/api/admin/authenticate";
+                //var url = "http://localhost:8080/SentimentAnalysis/api/admin/authenticate";
+
+                xhr.open("POST", url, false);
+                xhr.setRequestHeader("Content-type", "application/json");
+                var data = JSON.stringify({"loginName": document.forms["loginform"]["loginname"].value, "password": document.forms["loginform"]["loginpassword"].value});
+                xhr.send(data);
+
+                if (xhr.status == 200) {
+                    setCookie("username", document.forms["loginform"]["loginname"].value, 30);
+                    window.location.href = "dashboard.html";
+                    return;
+                }
+
+      <!--remove it in the future-->
+                setCookie("username", document.forms["loginform"]["loginname"].value, 30);
+
+                alert('Log in fail'); */
+      window.location.href = "dashboard.html";
+
+            });
+
+        </script>
+    </body>
+</html>
